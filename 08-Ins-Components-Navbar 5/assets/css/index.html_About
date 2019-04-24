@@ -44,9 +44,11 @@
                 overflow: hidden;
                 background-color: #light yellow;
             }
+
             li {
                 float: left;
             }
+
             li a {
                 display: block;
                 color: green;
@@ -54,6 +56,7 @@
                 padding: 14px 16px;
                 text-decoration: none;
             }
+
             li a:hover {
                 background-color: #111;
                 yellow
