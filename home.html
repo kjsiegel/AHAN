@@ -154,48 +154,67 @@
     </div>
   </div>
 	
-		<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</body>
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-.fa {
+body {font-family: Arial, Helvetica, sans-serif;}
+
+form {
+  border: 3px solid #f1f1f1;
+  font-family: Arial;
+}
+
+.container {
   padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+  background-color: #f1f1f1;
 }
 
-.fa:hover {
-    opacity: 0.7;
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-.fa-facebook {
-  background: #3B5998;
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
   color: white;
+  border: none;
 }
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
+input[type=submit]:hover {
+  opacity: 0.8;
 }
+</style>
+<body>
 
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
+<h2>CSS Newsletter</h2>
 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
+<form action="/action_page.php">
+  <div class="container">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>Asians for Humans and Nature is proud to announce our montly newsletter to inform you of all things happing within AHAN!</p>
+  </div>
 
-.fa-youtube {
-  background: #bb0000;
-  color: white;
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+
 </body>
+</html>
